@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./resources/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/queries.css" />
     <link rel="stylesheet" href="./vendors/css/grid.css" />
     <link rel="stylesheet" href="./vendors/css/ionicons.min.css" />
     <link
@@ -45,7 +46,7 @@
       <div class="hero-section">
         <p>It's not just any pie but</p>
         <h1>Bethany pie</h1>
-        <button><a href="/">Order Now</a></button>
+        <button><a href="#" class="js--order">Order Now</a></button>
       </div>
     </header>
 
@@ -62,7 +63,6 @@
           heavenly cheese cakes, spicy apple pies... The store became a success
           in no time. In 2015, no less than 100 pies were sold every day and
         </p>
-
         <p>
           Bethany's Pie Shop moved into a larger building. After receiving many
           requests, it became clear that our next step was making it possible to
@@ -72,9 +72,10 @@
           whenever you feel like it!
         </p>
       </div>
+      <div class="bg-color"></div>
     </section>
 
-    <section class="features" id="product">
+    <section class="features js--product-section" id="product">
         <div class="row">
           <h2>Our Products</h2>
         </div>
@@ -83,47 +84,72 @@
             <img src="./resources/img/products/applepie.jpg" alt="Apple Pie" />
             <div class="meal-heading">
               <h3>Apple pie</h3>
-              <p>36 &dollar;</p>
+              <p>&dollar;15</p>
             </div>
           </div>
           <div class="product-items">
-            <img src="./resources/img/products/applepie.jpg" alt="Apple Pie" />
+            <img src="./resources/img/products/blueberrycheesecakesmall.jpg" alt="Blueberry Cheese Cake" />
             <div class="meal-heading">
-              <h3>name</h3>
-              <p>price &dollar;</p>
+              <h3>Blueberry Cheese Cake</h3>
+              <p>&dollar;32</p>
             </div>
           </div>
           <div class="product-items">
-            <img src="./resources/img/products/applepie.jpg" alt="Apple Pie" />
+            <img src="./resources/img/products/cheesecake.jpg" alt="Cheese Cake" />
             <div class="meal-heading">
-              <h3>name</h3>
-              <p>price &dollar;</p>
+              <h3>Cheese Cake</h3>
+              <p>&dollar;18</p>
             </div>
           </div>
         
       </div>
       <div class="products">
           <div class="product-items">
-            <img src="./resources/img/products/applepie.jpg" alt="Apple Pie" />
+            <img src="./resources/img/products/cherrypiesmall copy.jpg" alt="Cherry Pie" />
             <div class="meal-heading">
-              <h3>name</h3>
-              <p>price &dollar;</p>
+              <h3>Cherry Pie</h3>
+              <p>&dollar;23</p>
             </div>
           </div>
           <div class="product-items">
-            <img src="./resources/img/products/applepie.jpg" alt="Apple Pie" />
+            <img src="./resources/img/products/christmasapplepiesmall.jpg" alt="Christmas Apple Pie" />
             <div class="meal-heading">
-              <h3>name</h3>
-              <p>price &dollar;</p>
+              <h3>Christmas Apple Pie</h3>
+              <p>&dollar;34</p>
             </div>
           </div>
           <div class="product-items">
-            <img src="./resources/img/products/applepie.jpg" alt="Apple Pie" />
+            <img src="./resources/img/products/cranberrypiesmall.jpg" alt="Cran Berry Pie" />
             <div class="meal-heading">
-              <h3>name</h3>
-              <p>price &dollar;</p>
+              <h3>Cran Berry Pie</h3>
+              <p>&dollar;10</p>
             </div>
           </div>
+      </div>
+      <div class="products">
+          <div class="product-items">
+            <img src="./resources/img/products/peachpiesmall.jpg" alt="Peach Pie" />
+            <div class="meal-heading">
+              <h3>Peach Pie</h3>
+              <p>&dollar;27</p>
+            </div>
+          </div>
+          <div class="product-items">
+            <img src="./resources/img/products/strawberrypiesmall.jpg" alt="Strawberry Pie" />
+            <div class="meal-heading">
+              <h3>Strewberry Pie</h3>
+              <p>&dollar;20</p>
+            </div>
+          </div>
+          <div class="product-items">
+            <img src="./resources/img/products/rhubarbpiesmall.jpg" alt="Rhubarb Pie" />
+            <div class="meal-heading">
+              <h3>Rhubarb Pie</h3>
+              <p>&dollar;12</p>
+            </div>
+          </div>
+      </div>
+          
     </section>
 
     <section class="contact-us" id="contact-us">
@@ -177,7 +203,7 @@
                   name="message-us"
                   id="message"
                   placeholder="Your message"
-                ></textarea>
+                fixed ></textarea>
               </div>
             </div>
             <div class="contact-items">

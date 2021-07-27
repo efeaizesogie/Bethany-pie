@@ -10,6 +10,15 @@ $(document).ready(function() {
             offset: '60px;'
           });
 
+    $(".js--order").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $(".js--product-section").offset().top
+          },
+          1000
+        );
+    });
+
     /* Navigation scroll */
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {

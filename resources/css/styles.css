@@ -108,7 +108,6 @@ header {
   float: right;
   overflow: hidden;
   margin: 30px;
-  padding-bottom: 2px;
 
 }
 
@@ -117,7 +116,7 @@ header {
 }
 
 .sticky .navList li {
-  padding: 12px 0;
+  padding: 15px 0;
 }
 
 .sticky .navList li a{
@@ -131,9 +130,8 @@ header {
   display: inline-block;
   margin-left: 20px;
   list-style: none;
-  padding: 1px 0;
-  border-bottom: 2px solid transparent;
-  transition: all 0.5s;
+  padding: 4px 0;
+  overflow: hidden;
 }
 
 .navList li a {
@@ -143,19 +141,24 @@ header {
   color: #eee;
   text-transform: uppercase;
   font-size: 80%;
+  border-bottom: 2px solid transparent;
   transition: all 0.5s;
+}
+
+.sticky .navList li a{
+padding: 12px 0;
+border-bottom: 2px solid transparent;
 }
 
 .sticky .navList li a:hover{
   color: #23cfa7;
-}
-
-.navList li:hover {
   border-bottom: 2px solid #23cfa7;
 }
 
-.navList li a:hover {
+
+.navList li a:hover { 
   color: #23cfa7;
+  border-bottom: 2px solid #23cfa7;
 }
 
 .hero-section button {
@@ -268,12 +271,31 @@ h1 {
 /**************** ABOUT SECTION ******************/
 /******************************************/
 .about-section{
+  width: 100%;
   padding-bottom: 0;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 3px 3px #23cfa7;
+}
+
+
+.bg-color{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #23cfa709;
+  clip-path: circle(700px at right 800px);
 }
 
 .about-content {
   display: flex;
   width: 100%;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-section p {
@@ -302,14 +324,15 @@ h1 {
   width: 80%;
   margin: 10px;
   background: #000;
-  object-fit: cover;
+  height: 260px;
+  overflow: hidden;
   border-radius: 5px;
   position: relative;
   transition: all 0.5s;
 }
 
 .product-items:hover img{
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .product-items:hover .meal-heading{
@@ -319,7 +342,7 @@ h1 {
 
 .product-items img{
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 5px;
   transition: all 0.5s;
@@ -329,7 +352,7 @@ h1 {
   position: absolute;
   bottom: 10px;
   left: 0;
-  color: #eff;
+  color: #fff;
   opacity: 0;
   visibility: hidden;
   padding: 30px;
@@ -337,10 +360,15 @@ h1 {
 }
 
 .meal-heading h3{
-  font-size: 120%;
+  font-size: 80%;
   text-transform: uppercase;
   padding-bottom: 2px;
   font-weight: 100;
+}
+
+.meal-heading p{
+  color: #23cfa7;
+  font-weight: 300;
 }
 /******************************************/
 /**************** CONTACT US ******************/
@@ -362,7 +390,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   height: 80%;
   box-shadow: 0 3px 3px #4b4b4b;
   border-radius: 5px;
@@ -448,7 +476,7 @@ footer ul li{
 }
 
 footer ul li a{
-  color: #ccc;
+  color: #aaa;
   font-size: 90%;
 }
 
